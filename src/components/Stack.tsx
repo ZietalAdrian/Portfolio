@@ -8,7 +8,7 @@ const Stack = () => {
           className="w-0 md:w-[230px] mt-[15px] lg:mt-[72px]"
         />
       </div>
-      <div>
+      <div className="overflow-hidden">
         <div className="h-[50px] w-[450px] relative block top-[15%] lg:top-[25%] overflow-hidden">
           <div className="absolute block m-auto whitespace-nowrap overflow-hidden min-w-full h-full">
             <span className="inline-block text-center pl-[100%] whitespace-nowrap min-w-full opacity-50 text-xl uppercase animate-marquee">

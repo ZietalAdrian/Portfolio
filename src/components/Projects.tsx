@@ -53,7 +53,7 @@ const Projects = () => {
                 } transition ease-linear duration-300 delay-150`}
               >
                 <h3 className="text-center underline">Description</h3>
-                <p className="text-center my-2 mx-1 md:mx-2">
+                <p className="text-center my-2 mx-1 sm:mx-2">
                   {`The website enables checking the currency rate in a
                   particular day of the week, on the chart it can be seen what has
                   changed throughout the whole month. You can save some currency to "Favorites", 
@@ -70,7 +70,7 @@ const Projects = () => {
                 } transition ease-linear duration-300 delay-300`}
               >
                 <h3 className="text-center underline md:mt-2 lg:mt-6">Stack</h3>
-                <div className="flex flex-wrap md:my-3 gap-1 md:px-2 lg:ml-2 text-xs lg:text-sm justify-center">
+                <div className="flex flex-wrap sm:mx-2 sm:mt-1 md:my-3 gap-1 md:px-2 lg:ml-2 text-xs lg:text-sm justify-center">
                   <div className="rounded-2xl bg-slate-700 py-1 px-2">
                     Tailwind
                   </div>
@@ -133,7 +133,7 @@ const Projects = () => {
           alt=""
           className="w-full h-full rounded"
         />
-        <div className="w-[375px] h-[205px] sm:w-[326px] sm:h-full md:w-[395px] overflow-scroll sm:overflow-hidden lg:h-[500px] lg:w-[512px] absolute top-0 left-0 sm:left-1/2 text-gray-100 rounded-r">
+        <div className="w-[375px] h-[205px] sm:w-[320px] sm:h-full md:w-[395px] overflow-scroll sm:overflow-hidden lg:h-[500px] lg:w-[512px] absolute top-0 left-0 sm:left-1/2 text-gray-100 rounded-r">
           <div className="h-[190px] sm:h-0 w-full bg-transparent"></div>
           <div className="h-[265px] sm:h-full bg-[rgb(15,20,27,0.8)]">
             <div className=" lg:p-3 text-xs md:text-sm lg:text-base">
@@ -160,7 +160,7 @@ const Projects = () => {
                 } transition ease-linear duration-300 delay-150`}
               >
                 <h3 className="text-center underline">Description</h3>
-                <p className="text-center my-2 mx-1 md:mx-2">
+                <p className="text-center my-2 mx-1 sm:mx-2">
                   The website created on the basis of Pinterest, enables
                   searching for information as well us photos in support of
                   Unsplash API. I added to this application the manual language
@@ -176,7 +176,7 @@ const Projects = () => {
                 } transition ease-linear duration-300 delay-300`}
               >
                 <h3 className="text-center underline md:mt-2 lg:mt-6">Stack</h3>
-                <div className="flex flex-wrap md:my-3 gap-1 lg:px-2 lg:ml-2 text-xs lg:text-sm justify-center">
+                <div className="flex flex-wrap sm:mx-2 sm:mt-1 md:my-3 gap-1 lg:px-2 lg:ml-2 text-xs lg:text-sm justify-center">
                   <div className="rounded-2xl bg-slate-700 py-1 px-2">
                     Tailwind
                   </div>
@@ -242,7 +242,7 @@ const Projects = () => {
         />
         <div className="w-[375px] h-[205px] sm:w-[326px] sm:h-full md:w-[395px] overflow-scroll sm:overflow-hidden lg:h-[500px] lg:w-[530px] absolute top-0 left-0 text-gray-100 rounded-l">
           <div className="h-[190px] sm:h-0 w-full bg-transparent"></div>
-          <div className="h-[205px] sm:h-full bg-[rgb(15,20,27,0.8)]">
+          <div className="h-[225px] sm:h-full bg-[rgb(15,20,27,0.8)]">
             <div className=" lg:p-3 text-xs md:text-sm lg:text-base">
               <h2
                 className={`text-center text-xs sm:text-sm md:text-base sm:py-1 lg:text-xl font-bold md:mb-2 lg:mb-6 relative ${
@@ -267,7 +267,7 @@ const Projects = () => {
                 } transition ease-linear duration-300 delay-150`}
               >
                 <h3 className="text-center underline">Description</h3>
-                <p className="text-center my-2 mx-1 md:mx-2">
+                <p className="text-center my-2 mx-1 sm:mx-2">
                   The shop offers wide variety of games. They are divided in to
                   categories, what helps founding favourite type with ease. One
                   may use this intelligence search engine, which filters data
@@ -284,7 +284,7 @@ const Projects = () => {
                 } transition ease-linear duration-300 delay-300`}
               >
                 <h3 className="text-center underline md:mt-2 lg:mt-6">Stack</h3>
-                <div className="flex flex-wrap md:my-3 gap-1 md:px-2 lg:ml-2 text-xs lg:text-sm justify-center">
+                <div className="flex flex-wrap sm:mx-2 sm:mt-1 md:my-3 gap-1 md:px-2 lg:ml-2 text-xs lg:text-sm justify-center">
                   <div className="rounded-2xl bg-slate-700 py-1 px-2">
                     JavaScript
                   </div>

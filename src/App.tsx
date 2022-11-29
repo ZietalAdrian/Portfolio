@@ -63,7 +63,7 @@ function App() {
       </h2>
       <Contact />
       <div
-        className={`absolute -bottom-[1978px] right-[220px] sm:-bottom-[2396px] sm:right-[240px] md:h-[200px] md:w-[120px] md:bottom-[80px] md:left-1 md:fixed bg-transparent md:opacity-0 ${
+        className={`absolute -bottom-[1978px] right-[230px] sm:-bottom-[2396px] sm:right-[240px] md:h-[200px] md:w-[120px] md:bottom-[80px] md:left-1 md:fixed bg-transparent md:opacity-0 ${
           inView &&
           "md:opacity-90 md:transition-all md:duration-1000 md:delay-[5000ms]"
         }`}

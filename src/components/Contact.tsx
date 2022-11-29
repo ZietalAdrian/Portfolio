@@ -3,6 +3,8 @@ import { BsPerson } from "react-icons/bs";
 import { BiMessageDetail } from "react-icons/bi";
 import { useState } from "react";
 import { useFormik } from "formik";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { contactSchema } from "../schemas/contactSchema";
 
@@ -11,8 +13,50 @@ const Contact = () => {
   const [emailAnim, setEmailAnim] = useState(false);
   const [messageAnim, setMessageAnim] = useState(false);
 
-  const onSubmit = () => {
-    console.log("submitted");
+  const notify = () => toast.success('E-mail sent ', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    });
+
+  type Values = {
+    name: string;
+    email: string;
+    message: string;
+  };
+
+  const onSubmit = (values: Values, { resetForm }: any) => {
+      fetch("https://formsubmit.co/ajax/zietal.adrian@gmail.com", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            name: values.name,
+            email: values.email,
+            message: values.message
+        })
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
+    notify()
+    resetForm({
+      values: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    });
+    setNameAnim(false)
+    setEmailAnim(false)
+    setMessageAnim(false)
   };
 
   const {
@@ -49,8 +93,7 @@ const Contact = () => {
   return (
     <section className="h-[550px] w-full bg-[#0f141b] pt-10">
       <form
-        action="https://formsubmit.co/zietal.adrian@gmail.com"
-        method="POST"
+        target="_blank"
         onSubmit={handleSubmit}
         autoComplete="off"
         className=" sm:w-[500px] h-[450px] mx-auto md:ml-[270px] lg:ml-[470px] xl:ml-[665px] 2xl:ml-[700px] flex flex-col items-end gap-6 pt-16 text-black relative"
@@ -82,6 +125,7 @@ const Contact = () => {
             type="text"
             id="name"
             name="name"
+            required
             className={`w-[300px] sm:w-[400px] mr-10 pl-[40px] pt-2 mb-[1px] pb-[6px] rounded outline-none border-solid border-2 ${
               errors.name && touched.name ? " border-red-500" : ""
             }`}
@@ -119,6 +163,7 @@ const Contact = () => {
             type="email"
             id="email"
             name="email"
+            required
             className={`w-[300px] sm:w-[400px] mr-10 pl-[40px] pt-2 mb-[1px] pb-[6px] rounded outline-none border-solid border-2 ${
               errors.email && touched.email ? " border-red-500" : ""
             }`}
@@ -155,6 +200,7 @@ const Contact = () => {
             value={values.message}
             id="message"
             name="message"
+            required
             className={`w-[300px] sm:w-[400px] h-[100px] mr-10 pl-[40px] py-2 rounded outline-none resize-none border-solid border-2 ${
               errors.message && touched.message ? " border-red-500" : ""
             }`}
@@ -176,6 +222,7 @@ const Contact = () => {
           Submit
         </button>
       </form>
+      <ToastContainer />
     </section>
   );
 };

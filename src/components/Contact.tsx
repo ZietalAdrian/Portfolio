@@ -91,7 +91,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="h-[550px] w-full bg-[#0f141b] pt-10">
+    <section className="h-[600px] w-full bg-[#0f141b] pt-10">
       <form
         target="_blank"
         onSubmit={handleSubmit}

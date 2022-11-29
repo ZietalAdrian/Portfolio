@@ -20,7 +20,7 @@ const Projects = () => {
         className="w-[375px] sm:w-[640px] md:w-[768px] lg:h-[500px] lg:w-[1024px] mx-auto mt-[50px] lg:mt-[100px] relative"
       >
         <img
-          src={require("../img/exchange.jpg")}
+          src={require("../img/exchange.png")}
           alt=""
           className="w-full h-full rounded"
         />

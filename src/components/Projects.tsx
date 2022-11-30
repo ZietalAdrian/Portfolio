@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { AiFillIeCircle } from "react-icons/ai";
-import { BsFileEarmarkCode,BsFillArrowUpCircleFill } from "react-icons/bs";
+import { BsFileEarmarkCode, BsFillArrowUpCircleFill } from "react-icons/bs";
 
 const Projects = () => {
   const { ref: firstRef, inView: firstVisible } = useInView({
@@ -39,10 +39,10 @@ const Projects = () => {
               >
                 Exchange Rates API
                 <div className="absolute top-[1.5px] left-[100px] sm:hidden">
-                  <BsFillArrowUpCircleFill/>
+                  <BsFillArrowUpCircleFill />
                 </div>
                 <div className="absolute top-[1.5px] right-[100px] sm:hidden">
-                  <BsFillArrowUpCircleFill/>
+                  <BsFillArrowUpCircleFill />
                 </div>
               </h2>
               <div
@@ -54,12 +54,12 @@ const Projects = () => {
               >
                 <h3 className="text-center underline">Description</h3>
                 <p className="text-center my-2 mx-1 sm:mx-2">
-                  {`The website enables checking the currency rate in a
-                  particular day of the week, on the chart it can be seen what has
-                  changed throughout the whole month. You can save some currency to "Favorites", 
+                  {`The website enables checking the currency rate day to day. 
+                  On the chart you can analyse what has changed throughout the whole month. 
+                  You can save some currency to "Favorites", 
                   and using Drag&drop delete chosen currency rate in a
-                  convenient way. Thanks to these functions you will
-                  be keep up with both the percentage increase and price.`}
+                  convenient way. Thanks to these functions you will be able to keep up 
+                  to date with both the percentage increase and price changes.`}
                 </p>
               </div>
               <div
@@ -146,10 +146,10 @@ const Projects = () => {
               >
                 Pinterest Clone
                 <div className="absolute top-[1.5px] left-[100px] sm:hidden">
-                  <BsFillArrowUpCircleFill/>
+                  <BsFillArrowUpCircleFill />
                 </div>
                 <div className="absolute top-[1.5px] right-[100px] sm:hidden">
-                  <BsFillArrowUpCircleFill/>
+                  <BsFillArrowUpCircleFill />
                 </div>
               </h2>
               <div
@@ -161,11 +161,12 @@ const Projects = () => {
               >
                 <h3 className="text-center underline">Description</h3>
                 <p className="text-center my-2 mx-1 sm:mx-2">
-                  The website created on the basis of Pinterest, enables
-                  searching for information as well us photos in support of
-                  Unsplash API. I added to this application the manual language
-                  switch. The website has modal with logging and registration
-                  and also appropriate alidation.
+                  The website has been created on the basis of Pinterest which
+                  enables searching for information as well as photos in support
+                  of Unsplash API. I added to this application the manual
+                  language switch. This website incorporates this modal which
+                  includes a login and registration and also appropriate
+                  validation.
                 </p>
               </div>
               <div
@@ -253,10 +254,10 @@ const Projects = () => {
               >
                 BuyUs
                 <div className="absolute top-[1.5px] left-[100px] sm:hidden">
-                  <BsFillArrowUpCircleFill/>
+                  <BsFillArrowUpCircleFill />
                 </div>
                 <div className="absolute top-[1.5px] right-[100px] sm:hidden">
-                  <BsFillArrowUpCircleFill/>
+                  <BsFillArrowUpCircleFill />
                 </div>
               </h2>
               <div
@@ -268,12 +269,13 @@ const Projects = () => {
               >
                 <h3 className="text-center underline">Description</h3>
                 <p className="text-center my-2 mx-1 sm:mx-2">
-                  The shop offers wide variety of games. They are divided in to
-                  categories, what helps founding favourite type with ease. One
-                  may use this intelligence search engine, which filters data
-                  based after each character. The website gives the opportunity
-                  to add chosen products to the basket, where they stay after
-                  leaving or refreshing the site.
+                  The shop offers a wide variety of games. They are divided in
+                  to categories, which helps finding their favourite type of
+                  games with ease. You may use this intelligent search engine,
+                  which filters data based after each search. The website gives
+                  the opportunity to add chosen products to their basket, which
+                  stay after leaving and refreshing the page or completely
+                  leaving the site and returning at a later time.
                 </p>
               </div>
               <div
@@ -312,7 +314,6 @@ const Projects = () => {
                   <BsFileEarmarkCode className="mt-[2px] lg:mt-[4px] mr-1 text-xs md:text-sm lg:text-lg" />
                   see code
                 </a>
-                
               </div>
             </div>
           </div>

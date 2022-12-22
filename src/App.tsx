@@ -12,7 +12,7 @@ import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 
 dotenv.config()
-ReactGA.initialize(process.env.GA_CODE);
+ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
 function App() {
   const { ref: socialMediaRef, inView } = useInView({

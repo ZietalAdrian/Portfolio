@@ -10,6 +10,7 @@ import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 
+//@ts-ignore
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
 function App() {

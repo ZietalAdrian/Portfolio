@@ -3,7 +3,6 @@ import { HiEnvelope } from "react-icons/hi2";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
 import ReactGA from 'react-ga';
-import * as dotenv from 'dotenv'
 
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -11,7 +10,6 @@ import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 
-dotenv.config()
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
 function App() {

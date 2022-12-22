@@ -10,8 +10,9 @@ import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 
-//@ts-ignore
-ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+
+const GA_CODE = process.env.REACT_APP_GA_CODE
+ReactGA.initialize(GA_CODE as string);
 
 function App() {
   const { ref: socialMediaRef, inView } = useInView({
@@ -33,7 +34,7 @@ function App() {
 
   useEffect(()=>{
     ReactGA.pageview(window.location.pathname + window.location.search);
-  },[])
+  })
 
   return (
     <div className="font-bodoni text-gray-100 relative overflow-hidden">

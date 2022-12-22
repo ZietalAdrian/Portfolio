@@ -1,13 +1,18 @@
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiEnvelope } from "react-icons/hi2";
 import { useInView } from "react-intersection-observer";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import ReactGA from 'react-ga';
+import * as dotenv from 'dotenv'
 
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
+
+dotenv.config()
+ReactGA.initialize(process.env.GA_CODE);
 
 function App() {
   const { ref: socialMediaRef, inView } = useInView({
@@ -26,6 +31,10 @@ function App() {
       behavior: "smooth",
     });
   };
+
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  },[])
 
   return (
     <div className="font-bodoni text-gray-100 relative overflow-hidden">

@@ -2,15 +2,13 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiEnvelope } from "react-icons/hi2";
 import { useInView } from "react-intersection-observer";
 import { useRef } from "react";
-import { inject } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
 
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
-
-inject();
 
 function App() {
   const { ref: socialMediaRef, inView } = useInView({
@@ -31,6 +29,7 @@ function App() {
   };
 
   return (
+    <>
     <div className="font-bodoni text-gray-100 relative overflow-hidden">
       <div
         ref={about}
@@ -103,6 +102,8 @@ function App() {
         ⓒ 2022 Adrian Ziętal | All Rights Reserved
       </footer>
     </div>
+    <Analytics />
+    </>
   );
 }
 

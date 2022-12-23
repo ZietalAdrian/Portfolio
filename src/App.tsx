@@ -1,8 +1,8 @@
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiEnvelope } from "react-icons/hi2";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useRef } from "react";
-import ReactGA from 'react-ga';
+import { useRef } from "react";
+import { inject } from '@vercel/analytics';
 
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -10,9 +10,7 @@ import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 
-
-const GA_CODE = process.env.REACT_APP_GA_CODE
-ReactGA.initialize(GA_CODE as string);
+inject();
 
 function App() {
   const { ref: socialMediaRef, inView } = useInView({
@@ -31,10 +29,6 @@ function App() {
       behavior: "smooth",
     });
   };
-
-  useEffect(()=>{
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  })
 
   return (
     <div className="font-bodoni text-gray-100 relative overflow-hidden">
